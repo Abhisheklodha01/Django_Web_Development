@@ -1,18 +1,30 @@
 {% extends "layout.html" %}
 
 {% block title %}
-Home Page
-{% endblock %}
+ Home Page
+{% endblock %} 
 
 {% block content %}
-<h1 class="text-4xl">Welcome to Django Home Page</h1>
-<div class="main">
+<div class="font-semibold text-lg text-gray-200-100">
+  <h1 class="text-4xl pt-20">Welcome to Chai aur Django Home Page</h1>
+  <div class="text-center mt-10">
     <p>Started Learning Django from Chai aur Code(Hitesh Sir)</p>
-    <button class="bg-pink-600 rounded-md py-1 px-4 mt-5 mb-5">Playlist Link</button>
-    <button class="bg-pink-600 rounded-md py-1 px-4 mt-5 mb-5">Channel Link</button>
-    <p>Here you can found many content like React, JS, Node, Python, C++, NextJS</p>
-    <p>Hanji Hamare Hitesh Sir ko sab kuch aata hai</p>
+    <div class="flex flex-row justify-center mt-5">
+      <button class="bg-pink-600 rounded-md py-2 px-6 mt-5 mb-5 mr-4">
+        Playlist Link
+      </button>
+      <button class="bg-pink-600 rounded-md py-2 px-6 mt-5 mb-5">
+        Channel Link
+      </button>
+    </div>
+  </div>
+  <div class="text-xl text-center mt-5">
+    <p class="mt-4 mb-5">
+      Here you can found many content like React, JS, Node, Python, C++, NextJS
+    </p>
+    <p class="mt-4 mb-5">Hanji Hamare Hitesh Sir ko sab kuch aata hai</p>
     <p>Please go and subscribe the chai aur code</p>
+  </div>
 </div>
 
-{% endblock  %}
+{% endblock %}
