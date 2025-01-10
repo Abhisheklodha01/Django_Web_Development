@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Chai Stores
+{% endblock %}
+
+{% block content %}
+ 
+ <div>
+    <form method = "POST" class="text-black">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button 
+        type="submit"
+        class = "bg-pink-600 py-2 px-6 ml-10 rounded mt-4 mb-4"
+        >Search Stores</button>
+    </form>
+    {% if stores%}
+      <h2>Stores Available</h2>
+      <ul>
+       {% for store in stores  %}
+       <li>{{store.name}}</li>
+       <li>{{store.location}}</li>
+       {% endfor %}
+      </ul>
+    {%endif%}
+ </div>
+
+{% endblock %}
