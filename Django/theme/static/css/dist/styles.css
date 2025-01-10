@@ -1175,6 +1175,10 @@ select {
     margin-top: 0px;
   }
 
+  .md\:ml-\[-90px\] {
+    margin-left: -90px;
+  }
+
   .md\:block {
     display: block;
   }
